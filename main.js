@@ -59,6 +59,12 @@ const roundNumbers = (num) => {
     return Math.round(num * 1000) / 1000;
 };
 
+const addDecimal = () => {
+    if (!currentValue.includes('.')) {
+        currentScreen.textContent = currentValue += '.';
+    }
+};
+
 // Event Listeners
 numbersButton.forEach((number) => {
     number.addEventListener('click', (e) => {
@@ -73,6 +79,10 @@ operatorsButton.forEach((operator) => {
         previousScreen.textContent = `${previousValue} ${operator.textContent}`;
         currentScreen.textContent = currentValue;
     });
+});
+
+decimalButton.addEventListener('click', () => {
+    addDecimal();
 });
 
 clearButton.addEventListener('click', () => {
