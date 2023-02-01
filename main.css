@@ -45,6 +45,7 @@ h1 ~ p::after {
 }
 
 button {
+    display: inline-block;
     cursor: pointer;
     outline: none;
     padding: 25px;
@@ -68,4 +69,32 @@ button:hover {
     border-radius: 0.2rem;
     background-color: hsl(255, 100%, 100%);
     border: 1px solid hsl(0, 0%, 20%);
+}
+
+.first__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen__calc {
+    width: 70%;
+    max-width: 362px;
+    height: 75px;
+    border: 1px solid hsl(0, 0%, 20%);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.previous {
+    font-size: 20px;
+}
+
+.current {
+    font-size: 28px;
 }
