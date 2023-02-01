@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu&display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 100%, 88%);
+    gap: 100px;
+    font-family: 'Indie Flower', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 5rem;
+    padding: 3.5rem;
+    background-color: hsl(255, 100%, 100%);
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+h1 ~ p::after {
+    margin-left: 0.5rem;
+    content: '🤎';
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    padding: 25px;
+    margin: 6px;
+    border: 1px solid hsl(0, 0%, 20%);
+    border-radius: 5px;
+    font-size: 22px;
+    transition: all 0.2s ease;
+    width: 70px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: hsl(276, 90%, 85%);
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 2px 0px #000000;
+}
+
+.container__calc {
+    padding: 4rem;
+    border-radius: 0.2rem;
+    background-color: hsl(255, 100%, 100%);
+    border: 1px solid hsl(0, 0%, 20%);
+}
