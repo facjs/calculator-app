@@ -51,7 +51,7 @@ const calculateResults = () => {
     }
 
     previousScreen.textContent = '';
-    currentScreen.textContent = result;
+    currentScreen.textContent = roundNumbers(result);
     currentValue = result;
 };
 
