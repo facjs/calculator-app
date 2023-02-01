@@ -83,4 +83,8 @@ clearButton.addEventListener('click', () => {
     currentScreen.textContent = '';
 });
 
-equalButton.addEventListener('click', calculateResults);
+equalButton.addEventListener('click', () => {
+    if (currentValue != '' && previousValue != '') {
+        calculateResults();
+    }
+});
